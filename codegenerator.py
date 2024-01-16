@@ -1,5 +1,5 @@
 from code_elements import Letter, Number
-from random import shuffle
+from random import choice, shuffle
 
 get_letter = Letter()
 get_number = Number()
@@ -9,15 +9,16 @@ class GenerateCode:
 
     def __init__(self):
         self.code = []
-        self.letters = []
-        self.numbers = []
+        self.letter_list = []
+        self.num_list = []
         self.letters = get_letter.str_to_list()
         self.numbers = get_number.return_numbers()
 
     def get_code(self):
         for _ in range(3):
-            for __ in range(3):
-                self.code.append(self.letters)
-            self.code.append(self.numbers)
-            shuffle(self.code)
+            self.letter_list.append(choice(self.letters))
+            self.num_list.append(choice(self.numbers))
+        self.code.extend(self.letter_list)
+        self.code.extend(self.num_list)
+        shuffle(self.code)
         return self.code
