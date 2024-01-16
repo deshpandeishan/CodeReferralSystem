@@ -8,10 +8,10 @@ get_number = Number()
 class GenerateCode:
 
     def __init__(self):
-        self.code = []
+        self.code_list = []
         self.letter_list = []
         self.num_list = []
-        self.code_str = ""
+        self.code = ""
         self.letters = get_letter.str_to_list()
         self.numbers = get_number.return_numbers()
 
@@ -19,9 +19,9 @@ class GenerateCode:
         for _ in range(3):
             self.letter_list.append(choice(self.letters))
             self.num_list.append(choice(self.numbers))
-        self.code.extend(self.letter_list)
-        self.code.extend(self.num_list)
-        shuffle(self.code)
-        for _ in self.code:
-            self.code_str += _
-        return self.code_str
+        self.code_list.extend(self.letter_list)
+        self.code_list.extend(self.num_list)
+        shuffle(self.code_list)
+        for _ in self.code_list:
+            self.code += _
+        return self.code
