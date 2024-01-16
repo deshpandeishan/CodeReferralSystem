@@ -23,10 +23,3 @@ class Number:
             _ = str(_)
             self.number_list.append(_)
         return self.number_list
-
-
-# random_letter = Letter()
-# random_letter.str_to_list()
-
-# random_number = Number()
-# random_number.get_numbers()

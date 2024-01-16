@@ -11,6 +11,7 @@ class GenerateCode:
         self.code = []
         self.letter_list = []
         self.num_list = []
+        self.code_str = ""
         self.letters = get_letter.str_to_list()
         self.numbers = get_number.return_numbers()
 
@@ -21,4 +22,6 @@ class GenerateCode:
         self.code.extend(self.letter_list)
         self.code.extend(self.num_list)
         shuffle(self.code)
-        return self.code
+        for _ in self.code:
+            self.code_str += _
+        return self.code_str
