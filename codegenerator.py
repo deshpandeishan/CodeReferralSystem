@@ -25,10 +25,3 @@ class GenerateCode:
         for _ in self.code_list:
             self.code += _
         return self.code
-
-
-class CreateCodeDictionary:
-
-    def __init__(self):
-        self.code_dict = {}
-

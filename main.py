@@ -1,9 +1,15 @@
 from codegenerator import GenerateCode
-from discount import Discount
+from dictionary import CodeDictionary
+# from discount import Discount
+# discount = Discount()
+# print(discount.check_condition())
 
 code_instance = GenerateCode()
-discount = Discount()
-
-code = code_instance.get_code()
-print(code)
-print(discount.check_condition())
+dictionary = CodeDictionary()
+limit = 11  # This variable holds the limit value of the total discounts allowed
+code_dict = {}
+for key in range(1, limit):
+    code = ""
+    code = code_instance.get_code()
+    code_dict = dictionary.create_dictionary(key, code)
+print(code_dict)
