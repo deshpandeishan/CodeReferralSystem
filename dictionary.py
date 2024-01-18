@@ -1,8 +1,8 @@
-class CodeDictionary:
+class CodeList:
 
     def __init__(self):
-        self.code_dict = {}
+        self.code_list = []
 
-    def create_dictionary(self, key, value):
-        self.code_dict[key] = value
-        return self.code_dict
+    def create_list(self, value):
+        self.code_list.append(value)
+        return self.code_list

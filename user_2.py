@@ -1,5 +1,4 @@
 from discount import DiscountCode
-
 discount_code = DiscountCode()
 
 
@@ -14,7 +13,8 @@ class InsertCode:
         user_input = input("Enter your discount coupon code here:   ")
         return user_input
 
-    def manage_codes(self):
-        user_code = self.take_ui()
-        # if user_code in :
-        #     pass
+    def manage_codes(self, user_code, code_list):
+        if user_code in code_list:
+            print("Code have been used already!")
+        else:
+            print("Discount granted!")
