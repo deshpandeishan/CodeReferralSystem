@@ -1,8 +1,6 @@
 from codegenerator import GenerateCode
 from dictionary import CodeDictionary
-# from discount import Discount
-# discount = Discount()
-# print(discount.check_condition())
+
 
 code_instance = GenerateCode()
 dictionary = CodeDictionary()
@@ -11,4 +9,5 @@ code_dict = {}
 for key in range(1, limit):
     code = code_instance.get_code()
     code_dict = dictionary.create_dictionary(key, code)
+
 print(code_dict)
