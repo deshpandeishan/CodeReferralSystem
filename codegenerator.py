@@ -16,6 +16,10 @@ class GenerateCode:
         self.numbers = get_number.return_numbers()
 
     def get_code(self):
+        self.letter_list = []
+        self.num_list = []
+        self.code_list = []
+        self.code = ""
         for _ in range(3):
             self.letter_list.append(choice(self.letters))
             self.num_list.append(choice(self.numbers))
