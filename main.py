@@ -1,7 +1,7 @@
 from codegenerator import GenerateCode
 from Codelist import CodeList
-from user_2 import InsertCode
-from discount import DiscountCode
+from user import InsertCode
+from code_manager import DiscountCode
 
 
 code_instance = GenerateCode()

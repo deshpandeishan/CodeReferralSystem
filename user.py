@@ -1,7 +1,8 @@
-from discount import DiscountCode
+from code_manager import DiscountCode
+from discount import Discount
 
 discount_code = DiscountCode()
-
+discount = Discount()
 
 class InsertCode:
 
@@ -20,7 +21,6 @@ class InsertCode:
                 print("Error! This code has been used by someone else!")
             else:
                 self.used_code_list.extend(discount_code.insert_used_code(user_input))
-                print("Discount granted!")
-                print(f"Used codes list:    {self.used_code_list}")
+                print(f"Your discounted price is:    {discount.calculate_discount()}")
         else:
             print("Error! Invalid code")
