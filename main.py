@@ -1,19 +1,25 @@
 from codegenerator import GenerateCode
-from dictionary import CodeList
+from Codelist import CodeList
 from user_2 import InsertCode
+from discount import DiscountCode
 
 
 code_instance = GenerateCode()
-dictionary = CodeList()
+codelist = CodeList()
 insert_code = InsertCode()
+discountcode = DiscountCode()
 
-limit = 11  # This variable holds the limit value of the total discounts allowed
+limit = 11  # This variable holds the limit value of the total discounts allowed for an event
 code_list = []
-for key in range(1, limit):
+for _ in range(1, limit):
     code = code_instance.get_code()
-    code_list = dictionary.create_list(code)
+    code_list = codelist.create_list(code)
 
-print(code_list)
+print(f"All codes:  {code_list}")
 
-user_input = insert_code.take_ui()
-insert_code.manage_codes(user_input, code_list)
+condition = True
+while condition:
+    user_input = insert_code.take_user_ip()
+    insert_code.manage_codes(user_input, code_list)
+    if user_input == "6875":
+        condition = False
