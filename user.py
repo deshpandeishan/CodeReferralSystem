@@ -33,7 +33,7 @@ class InsertCode(ReferralCode):
                 if refer == '1':
                     referCode = self.generate_code()
                     self.code_list.append(referCode)
-                    print(referCode)
+                    print(f"Your referral code:    {referCode}")
         else:
             print("Error! Invalid code")
 
@@ -42,7 +42,7 @@ class CallCodeGenerator(InsertCode):
 
     def __init__(self):
         super().__init__()
-        self.limit = 11
+        self.limit = 50
         self.code_str = ""
         self.condition = True
 
@@ -58,3 +58,18 @@ class CallCodeGenerator(InsertCode):
             self.manage_codes(user_input, self.code_list)
             if user_input == "6875":
                 self.condition = False
+
+
+
+
+
+class UserData:
+
+    def __init__(self):
+        self.name = ""
+        self.mobile_number = 0
+
+    def ask_data(self):
+        self.name = input("Enter your name:   ")
+        self.mobile_number = input("Enter your mobile number:   ")
+        return self.name, self.mobile_number
