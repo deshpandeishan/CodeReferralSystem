@@ -34,6 +34,7 @@ class InsertCode(ReferralCode):
                     referCode = self.generate_code()
                     self.code_list.append(referCode)
                     print(f"Your referral code:    {referCode}")
+                    return self.code_list
         else:
             print("Error! Invalid code")
 
@@ -58,9 +59,6 @@ class CallCodeGenerator(InsertCode):
             self.manage_codes(user_input, self.code_list)
             if user_input == "6875":
                 self.condition = False
-
-
-
 
 
 class UserData:

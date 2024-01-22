@@ -7,7 +7,6 @@ link_items = LinkListDict()
 
 for item in data:
     sub_dict = data[item]
-    print(link_items.link(sub_dict, item))
+    link_items.link(sub_dict, item)
 generate_code.call_code()
 generate_code.task()
-
