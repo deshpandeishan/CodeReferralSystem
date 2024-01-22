@@ -3,6 +3,7 @@ from discount import Discount
 from codegenerator import GenerateCode
 from Codelist import CodeList
 from refer_code import ReferralCode
+from sample_data import data
 
 discount_code = DiscountCode()
 discount = Discount()
@@ -27,14 +28,21 @@ class InsertCode(ReferralCode):
             if user_input in self.used_code_list:
                 print("Error! This code has been used by someone else!")
             else:
-                self.used_code_list.extend(discount_code.insert_used_code(user_input))
-                print(f"Your discounted price is:    {discount.calculate_discount()}")
-                refer = input("Type '1' for referring to the friend else type '0':    ")
-                if refer == '1':
-                    referCode = self.generate_code()
-                    self.code_list.append(referCode)
-                    print(f"Your referral code:    {referCode}")
-                    return self.code_list
+                user_id = input("Enter your unique id:  ")
+                for item in data:
+                    sub_dict = data[item]
+                    if user_id in sub_dict["id"]:
+                        self.used_code_list.extend(discount_code.insert_used_code(user_input))
+                        print(f"Your discounted price is:    {discount.calculate_discount()}")
+                        refer = input("Type '1' for referring to the friend else type '0':    ")
+                        if refer == '1':
+                            referCode = self.generate_code()
+                            self.code_list.append(referCode)
+                            print(f"Your referral code:    {referCode}")
+                            return self.code_list
+                    else:
+                        print("Error! You are not eligible for the discount offer!")
+                        break
         else:
             print("Error! Invalid code")
 
