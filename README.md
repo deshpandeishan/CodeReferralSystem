@@ -42,7 +42,7 @@ python3 main.py
 ```
 2. You will see this interface:
 
-    <img width="1391" alt="Screenshot 2024-01-26 at 12 11 52 PM" src="https://github.com/Ishan-28/test/assets/145470785/a7d9c516-b5ba-4ccc-a7b4-de15b6e3cbc5">
+      <img width="1391" alt="Screenshot 2024-01-26 at 12 11 52 PM" src="https://github.com/Ishan-28/test/assets/145470785/a7d9c516-b5ba-4ccc-a7b4-de15b6e3cbc5">
 
 3. Copy any discount code from the list which is displaying in you terminal:
 
