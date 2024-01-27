@@ -46,16 +46,16 @@ python3 main.py
 
 3. Copy any discount code from the list which is displaying in you terminal:
 
-    <img width="354" alt="Screenshot 2024-01-26 at 12 33 32 PM" src="https://github.com/Ishan-28/test/assets/145470785/6722b18d-a459-4026-b2fd-8812b05c7ae6">
+    <img width="354" alt="Screenshot 2024-01-26 at 12 33 32 PM" src="https://github.com/Ishan-28/test/assets/145470785/06ba9c59-a229-499f-a47c-a65da73c745c">
 
 4. It will ask for an unique id. Copy ```ID032``` id and paste it into the terminal:
 
-    <img width="214" alt="Screenshot 2024-01-26 at 12 34 18 PM" src="https://github.com/Ishan-28/test/assets/145470785/b989aaac-68b7-4cb2-8d7a-3ffceae2c5c7">
+    <img width="214" alt="Screenshot 2024-01-26 at 12 34 18 PM" src="https://github.com/Ishan-28/test/assets/145470785/1d3ea1d6-d4f3-4c06-85a9-ab333be839e4">
 
 
 5. After completing all the above steps it will provided the discount on the ticket and ask if you want to refer anyone who wants to to participate in the same event.
 
-    <img width="403" alt="Screenshot 2024-01-26 at 12 35 01 PM" src="https://github.com/Ishan-28/test/assets/145470785/0c896f9f-957c-4e28-99d8-711814929ba8">
+    <img width="403" alt="Screenshot 2024-01-26 at 12 35 01 PM" src="https://github.com/Ishan-28/test/assets/145470785/a3497315-fad8-4a8f-8a7b-cbe2be08357c">
 
 6. If you type ```1``` it will provide a new discount code which is not present in the list but is added to the list which is not displaying.
 Your friend can use this code and get the discount as well.
