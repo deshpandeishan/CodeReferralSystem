@@ -5,7 +5,7 @@ This project is a clone of a small part of a system which is used in platforms f
 - [Table of Content:](#table-of-content)  
     [1. Introduction](#1-introduction)  
     [2. Features](#2-features)  
-    [3. Installation](#3-installation)
+    [3. Installation](#3-installation)  
     [4. How to Use](#4-how-to-use)  
 
 ## 1. Introduction
