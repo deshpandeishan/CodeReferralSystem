@@ -3,10 +3,12 @@ This project is a clone of a small part of a system which is used in platforms f
 
 ## Table of Content:
 
-- [Introduction](#1-introduction)
-- [Features](#2-features)
-- [Installation](#3-installation)
-- [How to Use](#4-how-to-use)
+- [Referral Code System](#referral-code-system)
+  - [Table of Content:](#table-of-content)
+  - [1. Introduction](#1-introduction)
+  - [2. Features](#2-features)
+  - [3. Installation](#3-installation)
+  - [4. How to Use](#4-how-to-use)
 
 ## 1. Introduction
 Referral code system offers a solution for managing requests and providing responses to the platforms which are used for purchasing tickets for the events.  
@@ -42,7 +44,7 @@ python3 main.py
 ```
 2. You will see this interface:
 
-      <img width="1391" alt="Screenshot 2024-01-26 at 12 11 52 PM" src="https://github.com/Ishan-28/test/assets/145470785/379e54ba-1ca8-4786-8dc7-eabf7039df7f">
+      <img width="1391" alt="Screenshot 2024-01-26 at 12 11 52 PM" src="https://github.com/Ishan-28/CodeReferralSystem/assets/145470785/94cb388f-bedb-4913-bb0d-3868fee821fc">
 
 3. Copy any discount code from the list which is displaying in you terminal:
 
