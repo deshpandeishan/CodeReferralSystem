@@ -2,9 +2,7 @@
 This project is a clone of a small part of a system which is used in platforms for purchasing tickets online for events.
 
 ## Table of Content:
-
-- [Referral Code System](#referral-code-system)
-  - [Table of Content:](#table-of-content)  
+- [Table of Content:](#table-of-content)  
     [1. Introduction](#1-introduction)  
     [2. Features](#2-features)  
     [3. Installation](#3-installation)
