@@ -59,3 +59,15 @@ python3 main.py
 
 6. If you type ```1``` it will provide a new discount code which is not present in the list but is added to the list which is not displaying.
 Your friend can use this code and get the discount as well.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, enhancements, or bug fixes, feel free to [open an issue](#) or [submit a pull request](#).
+
+## Contact
+
+For any inquiries or support, please contact us at [deshpandeishan74@gmail.com](mailto:deshpandeishan75@gmail.com).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
